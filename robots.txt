@@ -1,0 +1,32 @@
+# Personal fitness dashboard.
+# Other crawlers: do not fetch or index this site.
+User-agent: *
+Disallow: /
+
+# ChatGPT browsing (ChatGPT-User) and OpenAI search (OAI-SearchBot) may read
+# the JavaScript-free summary and the main page (noscript text). The site owner
+# made this dashboard public. Paths are listed both site-relative and host-rooted
+# because the site is a GitHub Pages project (/fitness-dashboard/).
+User-agent: ChatGPT-User
+Allow: /summary.html
+Allow: /summary.txt
+Allow: /data.json
+Allow: /index.html
+Allow: /
+Allow: /fitness-dashboard/summary.html
+Allow: /fitness-dashboard/summary.txt
+Allow: /fitness-dashboard/data.json
+Allow: /fitness-dashboard/index.html
+Allow: /fitness-dashboard/
+
+User-agent: OAI-SearchBot
+Allow: /summary.html
+Allow: /summary.txt
+Allow: /data.json
+Allow: /index.html
+Allow: /
+Allow: /fitness-dashboard/summary.html
+Allow: /fitness-dashboard/summary.txt
+Allow: /fitness-dashboard/data.json
+Allow: /fitness-dashboard/index.html
+Allow: /fitness-dashboard/
